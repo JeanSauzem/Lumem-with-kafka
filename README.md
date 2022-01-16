@@ -19,3 +19,13 @@
 # Consumir
 
  * `docker exec -it api-mensagem php artisan ConsumerTopic chat-abc` o "chat-abc" é o nome do topico
+
+# Observações 
+* setar o ip no dns kafka
+
+```
+docker exec -it api-mensagem bash 
+
+echo '175.111.0.1   kafka' >> /etc/hosts
+
+```
